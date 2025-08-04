@@ -1,0 +1,215 @@
+.footer {
+    background-color: #0D4036;
+    color: white;
+    padding: 40px 50px;
+    font-family: "GT Walsheim Trial", sans-serif;
+  }
+  
+  .footer-container {
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.2fr;
+    gap: 60px;
+    margin-bottom: 50px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .company-info {
+    max-width: 280px;
+  }
+  
+  .logo-section {
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .company-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+    opacity: 0.9;
+  }
+  
+  .footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: white;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-link:hover {
+    transform: translateY(-2px);
+  }
+  
+  .social-link img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .newsletter-section {
+    max-width: 300px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .email-input {
+    padding: 12px 16px;
+    border: 2px solid #4a6b56;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .email-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .email-input:focus {
+    border-color: #a8d866;
+  }
+  
+  .subscribe-btn {
+    background-color: #a8d866;
+    color: #2d5945;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #95c44a;
+    transform: translateY(-1px);
+  }
+  
+  .subscribe-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #4a6b56;
+    padding-top: 20px;
+    text-align: right;
+  }
+  
+  .footer-copyright {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 1024px) {
+    .footer-content {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+    }
+    
+    .newsletter-section {
+      grid-column: span 3;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 20px
+    }
+    
+    .footer-content {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    
+    .company-info {
+      grid-column: span 2;
+      max-width: 100%;
+    }
+    
+    .newsletter-section {
+      grid-column: span 2;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .company-info,
+    .newsletter-section {
+      grid-column: span 1;
+    }
+    
+    .newsletter-form {
+      flex-direction: column;
+    }
+    
+    .subscribe-btn {
+      align-self: stretch;
+    }
+  }

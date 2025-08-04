@@ -1,0 +1,35 @@
+.navbar_container {
+    height: 85px;
+    background-color: #0D4036;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+.nav_links {
+    margin-right: 170px;
+}
+.nav_links a {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: "GT Walsheim Trial", sans-serif; 
+    margin: 30px;
+}
+.nav_socials {
+    display: flex;
+    gap: 30px;
+}
+.sub_btn a {
+    color: white;
+    font-weight: 300;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-family: "GT Walsheim Trial", sans-serif; 
+}
+.social_links {
+    display: flex;
+    gap: 15px;
+}
