@@ -8,7 +8,7 @@
 
 .events_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);     
     gap: 40px;
 }
 
@@ -24,6 +24,7 @@
     color: white;
     margin-bottom: 20px;
 }
+
 .event_card1 p {
     font-family: "GT Walsheim Trial", sans-serif;
     color: white;
@@ -42,6 +43,11 @@
     color: #0D4036;
 }
 
+/* Mobile Events Section - Hidden by default */
+.mobile_events_section {
+    display: none;
+}
+
 .event_card2 {
     background-color: #0D4036;
     padding: 30px;
@@ -49,12 +55,14 @@
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4); 
 }
+
 .event_card2 .card_header {
     display: flex;
     align-items: center;
     gap: 12px;
     color: white;
 }
+
 .event_card2 .card_header h2 {
     font-family: "GT Walsheim Trial", sans-serif;
     font-weight: 800;
@@ -62,6 +70,7 @@
     line-height: 28px;
     color: white;
 }
+
 .event_card2 p {
     font-family: "GT Walsheim Trial", sans-serif;
     color: white;
@@ -72,6 +81,7 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
 .event_card2 .links {
     display: flex;
     color: white;
@@ -79,6 +89,7 @@
     font-size: 15px;
     align-items: center;
 }
+
 .event_card2 .links .link1 {
     border: 1px solid white;
     padding: 10px;
@@ -91,18 +102,21 @@
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4); 
 }
+
 .event_card .card_header {
     display: flex;
     align-items: center;
     gap: 12px;
     color: #0D4036;
 }
+
 .event_card .card_header h2 {
     font-family: "GT Walsheim Trial", sans-serif;
     font-weight: 800;
     font-size: 24px;
     line-height: 28px;
 }
+
 .event_card p {
     font-family: "GT Walsheim Trial", sans-serif;
     color: #0D4036;
@@ -113,6 +127,7 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
 .event_card .links {
     display: flex;
     color: #0D4036;
@@ -125,4 +140,160 @@
     border: 1px solid #0D4036;
     padding: 10px;
     border-radius: 10px;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    .events_container {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px;
+    }
+    
+    .events_grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+        
+    .event_card {
+        display: none;
+    }
+    
+    .event_card2 {
+        display: none;
+    }
+    
+    .event_card1 {
+        margin-top: 0;
+    }
+    
+    .mobile_events_section {
+        display: block;
+        margin-top: 40px;
+        background-color: white;
+        padding: 30px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .event_tabs {
+        display: flex;
+        margin-bottom: 20px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tab_button {
+        flex: 1;
+        padding: 12px 35px;
+        border: none;
+        font-family: "GT Walsheim Trial", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .tab_button.active {
+        background-color: #0D4036;
+        color: white;
+    }
+    
+    .tab_button:not(.active) {
+        background-color: white;
+        color: #0D4036;
+        border-right: 1px solid #e0e0e0;
+    }
+    
+    .tab_button:hover {
+        opacity: 0.8;
+    }
+    
+    .mobile_event_cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .mobile_event_card {
+        background-color: #0D4036;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .mobile_card_header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .mobile_card_header h3 {
+        font-family: "GT Walsheim Trial", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+        margin: 0;
+    }
+    
+    .mobile_event_card p {
+        font-family: "GT Walsheim Trial", sans-serif;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        line-height: 22px;
+        margin-bottom: 25px;
+        opacity: 0.9;
+    }
+    
+    .mobile_card_links {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .mobile_book_btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #0D4036 !important;
+        color: white !important;
+        border: 1px solid white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-family: "GT Walsheim Trial", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        min-width: 140px;
+        justify-content: center;
+    }
+    
+    .mobile_book_btn:hover {
+        background-color: white;
+        color: #0D4036;
+    }
+    
+    .mobile_details_link {
+        display: flex;
+        align-items: center;
+        background-color: transparent !important;
+        gap: 10px;
+        color: white !important;
+        font-family: "GT Walsheim Trial", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        opacity: 0.9;
+    }
+    
+    .mobile_details_link:hover {
+        opacity: 1;
+        text-decoration: underline;
+    }
 }

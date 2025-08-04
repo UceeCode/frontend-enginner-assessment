@@ -6,6 +6,8 @@ import whitearrow from '../images/whitearrow.png';
 import Image from 'next/image';
 import calenderPng from "../images/calender.png";
 import whitecalenderPng from "../images/whitecalender.png";
+import straightwhitecalenderPng from "../images/white_Calender.png";
+
 
 
 const Events = () => {
@@ -27,7 +29,182 @@ const Events = () => {
                     width={20}
                     />
                 </Link>
+                
+                <div className="mobile_events_section">
+                    <div className="event_tabs">
+                        <button className="tab_button active">All Event</button>
+                        <button className="tab_button">BRN Only</button>
+                    </div>
+
+                    <div className="mobile_event_cards">
+                        <div className="mobile_event_card">
+                            <div className="mobile_card_header">
+                                <Image
+                                src={straightwhitecalenderPng}
+                                alt="calender"
+                                height={35}
+                                width={35}
+                                />
+                                <h3>Vision & Execution</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div className="mobile_card_links">
+                                <Link href="/" className="mobile_book_btn">
+                                    Book A Seat
+                                    <Image
+                                    src={whitearrow}
+                                    alt="arrow"
+                                    height={16}
+                                    width={16}
+                                    />
+                                </Link>
+                                <Link href="/" className="mobile_details_link">
+                                    Event Details
+                                    <Image
+                                    src={whitearrow}
+                                    alt="arrow"
+                                    height={16}
+                                    width={16}
+                                    />
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="mobile_event_card">
+                            <div className="mobile_card_header">
+                                <Image
+                                src={straightwhitecalenderPng}
+                                alt="calender"
+                                height={35}
+                                width={35}
+                                />
+                                <h3>Vision & Execution</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div className="mobile_card_links">
+                                <Link href="/" className="mobile_book_btn">
+                                    Book A Seat
+                                    <Image
+                                    src={whitearrow}
+                                    alt="arrow"
+                                    height={16}
+                                    width={16}
+                                    />
+                                </Link>
+                                <Link href="/" className="mobile_details_link">
+                                    Event Details
+                                    <Image
+                                    src={whitearrow}
+                                    alt="arrow"
+                                    height={16}
+                                    width={16}
+                                    />
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="mobile_event_card">
+                            <div className="mobile_card_header">
+                                <Image
+                                src={straightwhitecalenderPng}
+                                alt="calender"
+                                height={35}
+                                width={35}
+                                />
+                                <h3>Vision & Execution</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div className="mobile_card_links">
+                                <Link href="/" className="mobile_book_btn">
+                                    Book A Seat
+                                    <Image
+                                    src={whitearrow}
+                                    alt="arrow"
+                                    height={16}
+                                    width={16}
+                                    />
+                                </Link>
+                                <Link href="/" className="mobile_details_link">
+                                    Event Details
+                                    <Image
+                                    src={whitearrow}
+                                    alt="arrow"
+                                    height={16}
+                                    width={16}
+                                    />
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="mobile_event_card">
+                            <div className="mobile_card_header">
+                                <Image
+                                src={straightwhitecalenderPng}
+                                alt="calender"
+                                height={35}
+                                width={35}
+                                />
+                                <h3>Vision & Execution</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div className="mobile_card_links">
+                                <Link href="/" className="mobile_book_btn">
+                                    Book A Seat
+                                    <Image
+                                    src={whitearrow}
+                                    alt="arrow"
+                                    height={16}
+                                    width={16}
+                                    />
+                                </Link>
+                                <Link href="/" className="mobile_details_link">
+                                    Event Details
+                                    <Image
+                                    src={whitearrow}
+                                    alt="arrow"
+                                    height={16}
+                                    width={16}
+                                    />
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="mobile_event_card">
+                            <div className="mobile_card_header">
+                                <Image
+                                src={straightwhitecalenderPng}
+                                alt="calender"
+                                height={35}
+                                width={35}
+                                />
+                                <h3>Vision & Execution</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div className="mobile_card_links">
+                                <Link href="/" className="mobile_book_btn">
+                                    Book A Seat
+                                    <Image
+                                    src={whitearrow}
+                                    alt="arrow"
+                                    height={16}
+                                    width={16}
+                                    />
+                                </Link>
+                                <Link href="/" className="mobile_details_link">
+                                    Event Details
+                                    <Image
+                                    src={whitearrow}
+                                    alt="arrow"
+                                    height={16}
+                                    width={16}
+                                    />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
             <div className="event_card2">
                 <div className="card_header">
                     <Image

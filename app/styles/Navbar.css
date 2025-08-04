@@ -33,3 +33,20 @@
     display: flex;
     gap: 15px;
 }
+.mobile_menu {
+    display: none;
+}
+@media (max-width: 768px) {
+    .navbar_container {
+        padding: 10px 20px;
+    }
+    .nav_links {
+        display: none;
+    }
+    .nav_socials {
+        display: none;
+    }
+    .mobile_menu {
+        display: block;
+    }
+}

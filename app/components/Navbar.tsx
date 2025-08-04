@@ -7,6 +7,7 @@ import fbLogo from '../images/FB.png';
 import igLogo from '../images/Insta.png';
 import ytLogo from '../images/Youtube.png';
 import liLogo from '../images/Linkedin.png';
+import mobilemenu from '../images/mobilemenu.png';
 const Navbar = () => {
   return (
     <div className='navbar_container'>
@@ -79,6 +80,14 @@ const Navbar = () => {
                 width={20} 
                 />
             </div>
+        </div>
+        <div className="mobile_menu">
+            <Image
+            src={mobilemenu}
+            alt='menu'
+            height={30}
+            width={30}
+            />
         </div>
     </div>
   )

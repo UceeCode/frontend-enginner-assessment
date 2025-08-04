@@ -7,6 +7,8 @@ import Image from 'next/image';
 import blur from '../images/blur.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import mobilerightImg from '../images/mobileHero1.png'
+import mobileleftImg from '../images/mobileHero2.png'
 const Hero = () => {
 
   useEffect(() => {
@@ -36,6 +38,20 @@ const Hero = () => {
                 height={650}
                 width={700}
                 className="hero-right-image"
+                />
+                <Image
+                src={mobilerightImg}
+                alt='img'
+                height={650}
+                width={700}
+                className="mobile-right-image"
+                />
+                <Image
+                src={mobileleftImg}
+                alt='img'
+                height={650}
+                width={700}
+                className="mobile-left-image"
                 />
                 <Image
                 src={blur}
