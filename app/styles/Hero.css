@@ -84,3 +84,9 @@
         display: none;
     }
 }
+
+@media (max-width: 468px) {
+    .hero_container .right_sec h1 {
+        font-size: 25px;
+    }
+}

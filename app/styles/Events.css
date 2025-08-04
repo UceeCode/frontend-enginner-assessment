@@ -142,7 +142,6 @@
     border-radius: 10px;
 }
 
-/* Mobile Specific Styles */
 @media (max-width: 768px) {
     .events_container {
         height: auto;
@@ -295,5 +294,24 @@
     .mobile_details_link:hover {
         opacity: 1;
         text-decoration: underline;
+    }
+}
+
+@media (max-width: 468px) {
+    .mobile_book_btn {
+        font-size: 11px;
+        min-width: 165px;
+    } 
+    .mobile_details_link {
+        font-size: 11px;
+        min-width: 165px;
+    }
+    .mobile_events_section {
+        display: block;
+        margin-top: 40px;
+        background-color: white;
+        padding: 30px 20px;
+        margin-left: -30px;
+        margin-right: -20px;
     }
 }
